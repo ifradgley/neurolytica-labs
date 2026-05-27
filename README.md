@@ -1,4 +1,4 @@
-# Biotech Labs
+# Neurolytica Labs
 
 Fictional biotech company portfolio website built with:
 - React
