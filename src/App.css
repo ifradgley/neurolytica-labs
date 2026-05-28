@@ -5,7 +5,10 @@
     "content content"
     "footer footer";
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .hero {
   grid-area: hero;
 }
@@ -89,23 +92,24 @@
 #view-button {
   color: rgb(255, 255, 255);
   background-color: rgb(18, 99, 131);
-  padding: 15px;
-  border-radius: 20px;
+  padding: 1.5em;
+  border-radius: 25px;
   margin: 20px 10px;
-  width: 153px;
+  width: 148px;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 0.7rem;
+  margin-right: 1rem;
 }
 
 #explore-button {
   color: rgb(255, 255, 255);
   background-color: rgb(18, 99, 131);
-  padding: 15px;
-  border-radius: 20px;
-  margin-right: 20px 10px;
-  width: 153px;
+  padding: 1.5em;
+  border-radius: 25px;
+  margin: 20px 10px;
+  width: 148px;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 #hero-img {
