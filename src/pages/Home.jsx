@@ -40,7 +40,23 @@ function Home() {
             alt="Brain MRI"
           />
         </div>
-        <div className="content"></div>
+        <div className="content">
+          <div className="reference-section">
+            <div className="reference-text">
+              Trusted by researchers at
+              <div className="reference-images">
+                <img
+                  id="reference-1"
+                  src="src\assets\images\Screenshot 2026-05-28 172503.png"
+                ></img>
+                <img
+                  id="reference-2"
+                  src="src\assets\images\Screenshot 2026-05-28 172526.png"
+                ></img>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="footer"></div>
     </div>
