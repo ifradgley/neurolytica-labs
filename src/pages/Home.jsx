@@ -1,4 +1,7 @@
+import { NavLink } from "react-router-dom";
+
 function Home() {
+  function handleClick() {}
   return (
     <div className="home">
       <div className="home-page">
@@ -13,6 +16,14 @@ function Home() {
               researchers interpret complex neurological and toxicological data
               with clarity and confidence.
             </p>
+            <NavLink to="/technology">
+              <button Id="view-button">View Technology</button>
+            </NavLink>
+            <NavLink to="/publications">
+              <button id="explore-button" onClick={handleClick}>
+                Explore Publications
+              </button>
+            </NavLink>
           </header>
           <img
             id="hero-img"
