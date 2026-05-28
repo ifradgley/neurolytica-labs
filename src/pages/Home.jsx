@@ -28,6 +28,9 @@ function Home() {
             <NavLink to="/publications">
               <button id="explore-button" onClick={handleClick}>
                 Explore Publications
+                <div className="explore-button-mask">
+                  <div className="explore-button-glow"></div>
+                </div>
               </button>
             </NavLink>
           </header>
