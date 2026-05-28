@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/Neurolytica-Title-Logo(V2).png";
+import searchIcon from "../assets/images/search-teal.png";
 
 function Navbar() {
   return (
@@ -28,6 +29,10 @@ function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
+      <div className="search-container">
+        <input id="search-bar" type="text" placeholder="Search..." />
+        <img src={searchIcon} alt="search" className="search-icon" />
+      </div>
     </nav>
   );
 }
