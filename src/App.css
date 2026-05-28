@@ -1,3 +1,21 @@
+.home-page {
+  display: grid;
+  grid-template-areas:
+    "hero hero"
+    "content content"
+    "footer footer";
+  width: 100%;
+}
+.hero {
+  grid-area: hero;
+}
+.content {
+  grid-area: content;
+}
+.footer {
+  grid-area: footer;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -41,9 +59,36 @@
 }
 
 .hero {
+  grid-area: hero;
   display: flex;
-  justify-content: flex-end;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10%;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+.hero h1 {
+  color: rgb(18, 99, 131);
+  font-size: 2rem;
+}
+
+.hero h3 {
+  color: rgb(110, 165, 187);
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+.hero p {
+  color: rgb(0, 0, 0);
+  max-width: 350px;
+  font-size: 0.9rem;
+  padding-top: 10px;
 }
 
 #hero-img {
@@ -51,27 +96,6 @@
   width: auto;
   display: block;
   border-radius: 25px;
-}
-
-.hero-section {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-section h1 {
-  color: rgb(18, 99, 131);
-  font-size: 2rem;
-}
-
-.hero-section h3 {
-  color: rgb(110, 165, 187);
-  font-size: 1rem;
-}
-
-.hero-section p {
-  color: rgb(0, 0, 0);
-  max-width: 350px;
-  font-size: 0.9rem;
 }
 
 .footer {

@@ -1,8 +1,8 @@
 function Home() {
   return (
     <div className="home">
-      <section className="hero">
-        <div className="hero-section">
+      <div className="home-page">
+        <div className="hero">
           <header>
             <h1>Neurotoxicology & Biomarker Research</h1>
             <h3>
@@ -20,7 +20,9 @@ function Home() {
             alt="Brain MRI"
           />
         </div>
-      </section>
+        <div className="content"></div>
+      </div>
+      <div className="footer"></div>
     </div>
   );
 }
