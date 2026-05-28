@@ -57,6 +57,31 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="card-section">
+          <div className="card-container">
+            <div className="card-1">
+              <h3>NEUROTOXICOLOGY SCREENING</h3>
+              <img
+                src="src\assets\images\neurotox-background(3).png"
+                alt="Lab"
+              />
+            </div>
+            <div className="card-2">
+              <h3>BIOMARKER ANALYSIS</h3>
+              <img
+                src="src\assets\images\Biomarkers-Masthead-1380x1035(2).jpg"
+                alt="Lab"
+              />
+            </div>
+            <div className="card-3">
+              <h3>NEUROLOGICAL DATA INTERPRETATION</h3>
+              <img
+                src="src\assets\images\Screenshot 2026-05-27 165849.png"
+                alt="Lab"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div className="footer"></div>
     </div>

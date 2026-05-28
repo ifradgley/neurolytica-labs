@@ -28,11 +28,11 @@ function Navbar() {
         <li>
           <NavLink to="/contact">Contact</NavLink>
         </li>
+        <li className="search-container">
+          <input id="search-bar" type="text" placeholder="Search..." />
+          <img src={searchIcon} alt="search" className="search-icon" />
+        </li>
       </ul>
-      <div className="search-container">
-        <input id="search-bar" type="text" placeholder="Search..." />
-        <img src={searchIcon} alt="search" className="search-icon" />
-      </div>
     </nav>
   );
 }
