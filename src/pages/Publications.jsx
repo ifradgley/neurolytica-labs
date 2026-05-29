@@ -1,1 +1,16 @@
-export default function Publications() { return <h1>Publications</h1>; }
+import { NavLink } from "react-router-dom";
+
+function Publications() {
+  function handleClick() {}
+  return (
+    <div className="home">
+      <div className="home-page">
+        <div className="hero"></div>
+        <div className="content"></div>
+        <div className="footer"></div>
+      </div>
+    </div>
+  );
+}
+
+export default Publications;
