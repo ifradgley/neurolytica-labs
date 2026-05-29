@@ -24,6 +24,8 @@ function About() {
                 neurobiological data by developing analytical systems focused on
                 precision, transparency, and scientific usability.
               </div>
+              <div className="collaborate-wrapper"></div>
+              <button id="collaborate">Collaborate with us</button>
             </div>
 
             <div className="values-column">
@@ -31,27 +33,28 @@ function About() {
               <div className="values-cards">
                 <div className="integrity">
                   <h3>
-                    SCIENTIFIC INTEGRITY - Transparent and reproducible
-                    analytical workflows.
+                    SCIENTIFIC INTEGRITY -
+                    <p>Transparent and reproducible analytical workflows.</p>
                   </h3>
                 </div>
                 <div className="precision">
                   <h3>
-                    DATA PRECISION - High-confidence interpretation of
-                    neurological datasets.
+                    DATA PRECISION -{" "}
+                    <p>
+                      High-confidence interpretation of neurological datasets.
+                    </p>
                   </h3>
                 </div>
                 <div className="innovation">
                   <h3>
-                    ETHICAL INNOVATION - Responsible development of
-                    neuroanalytical technologies.
+                    ETHICAL INNOVATION -{" "}
+                    <p>
+                      Responsible development of neuroanalytical technologies.
+                    </p>
                   </h3>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="collaborate-wrapper">
-            <button id="collaborate">Collaborate with us</button>
           </div>
         </div>
         <div className="footer"></div>
