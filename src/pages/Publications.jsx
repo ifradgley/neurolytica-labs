@@ -1,7 +1,4 @@
-import { NavLink } from "react-router-dom";
-
 function Publications() {
-  function handleClick() {}
   return (
     <div className="publications">
       <div className="publications-page">

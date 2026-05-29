@@ -1,7 +1,4 @@
-import { NavLink } from "react-router-dom";
-
 function Contact() {
-  function handleClick() {}
   return (
     <div className="contact">
       <div className="contact-page">

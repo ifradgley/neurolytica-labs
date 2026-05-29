@@ -1,7 +1,4 @@
-import { NavLink } from "react-router-dom";
-
 function Technology() {
-  function handleClick() {}
   return (
     <div className="technology">
       <div className="technology-page">

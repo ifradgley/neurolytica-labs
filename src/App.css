@@ -237,6 +237,37 @@
   margin-top: 15px;
 }
 
+.about {
+  max-width: none;
+  width: 100%;
+}
+
+.about-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .hero {
+  grid-area: hero;
+}
+
+.about .hero h1 {
+  font-weight: 400;
+}
+
+.about .hero p {
+  color: rgb(0, 0, 0);
+  max-width: 1000px;
+  font-size: 1rem;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+#hero-img {
+  margin-top: 1rem;
+}
+
 .footer {
   grid-area: footer;
   text-align: center;

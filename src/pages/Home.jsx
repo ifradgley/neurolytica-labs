@@ -17,20 +17,12 @@ function Home() {
               with clarity and confidence.
             </p>
             <NavLink to="/technology">
-              <button id="view-button">
-                View Technology
-                <div className="view-button-mask">
-                  <div className="view-button-glow"></div>
-                </div>
-              </button>
+              <button id="view-button">View Technology</button>
             </NavLink>
 
             <NavLink to="/publications">
               <button id="explore-button" onClick={handleClick}>
                 Explore Publications
-                <div className="explore-button-mask">
-                  <div className="explore-button-glow"></div>
-                </div>
               </button>
             </NavLink>
           </header>
