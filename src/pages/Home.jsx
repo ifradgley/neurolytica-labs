@@ -39,11 +39,12 @@ function Home() {
               <div className="reference-images">
                 <img
                   id="reference-1"
-                  src="src\assets\images\Screenshot 2026-05-28 172503.png"
+                  src="src/assets/images/Screenshot 2026-05-28 172503.png"
+                  alt="Lab"
                 ></img>
                 <img
                   id="reference-2"
-                  src="src\assets\images\Screenshot 2026-05-28 172526.png"
+                  src="src/assets/images/Screenshot 2026-05-28 172526.png"
                 ></img>
               </div>
             </div>
@@ -54,28 +55,28 @@ function Home() {
             <div className="card-1">
               <h3>NEUROTOXICOLOGY SCREENING</h3>
               <img
-                src="src\assets\images\neurotox-background(3).png"
-                alt="Lab"
+                src="src/assets/images/neurotox-background(3).png"
+                alt="Neurotoxicology screening laboratory equipment"
               />
             </div>
             <div className="card-2">
               <h3>BIOMARKER ANALYSIS</h3>
               <img
-                src="src\assets\images\Biomarkers-Masthead-1380x1035(2).jpg"
-                alt="Lab"
+                src="src/assets/images/Biomarkers-Masthead-1380x1035(2).jpg"
+                alt="Biomarker analysis data visualization"
               />
             </div>
             <div className="card-3">
               <h3>NEUROLOGICAL DATA INTERPRETATION</h3>
               <img
-                src="src\assets\images\Screenshot 2026-05-27 165849.png"
-                alt="Lab"
+                src="src/assets/images/Screenshot 2026-05-27 165849.png"
+                alt="Neurological data interpretation charts and graphs"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="footer"></div>
+      <div className="footer" />
     </div>
   );
 }
