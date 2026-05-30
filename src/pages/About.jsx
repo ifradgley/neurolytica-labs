@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function About() {
   return (
     <div className="about">
@@ -18,14 +20,16 @@ function About() {
         <div className="content">
           <div className="our-missions">
             <div className="missions-column">
-              <h2>OUR MISSIONS</h2>
+              <h2>OUR MISSION</h2>
               <div className="mission-statement">
                 Our mission is to improve how researchers interpret complex
                 neurobiological data by developing analytical systems focused on
                 precision, transparency, and scientific usability.
               </div>
               <div className="collaborate-wrapper"></div>
-              <button id="collaborate">Collaborate with us</button>
+              <NavLink to="/contact">
+                <button id="collaborate">Collaborate with us</button>
+              </NavLink>
             </div>
 
             <div className="values-column">
@@ -39,7 +43,7 @@ function About() {
                 </div>
                 <div className="precision">
                   <h3>
-                    DATA PRECISION -{" "}
+                    DATA PRECISION -
                     <p>
                       High-confidence interpretation of neurological datasets.
                     </p>
@@ -47,7 +51,7 @@ function About() {
                 </div>
                 <div className="innovation">
                   <h3>
-                    ETHICAL INNOVATION -{" "}
+                    ETHICAL INNOVATION -
                     <p>
                       Responsible development of neuroanalytical technologies.
                     </p>

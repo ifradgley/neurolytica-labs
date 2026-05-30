@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 function Home() {
-  function handleClick() {}
   return (
     <div className="home">
       <div className="home-page">
@@ -21,9 +20,7 @@ function Home() {
             </NavLink>
 
             <NavLink to="/publications">
-              <button id="explore-button" onClick={handleClick}>
-                Explore Publications
-              </button>
+              <button id="explore-button">Explore Publications</button>
             </NavLink>
           </header>
           <img

@@ -31,9 +31,9 @@
 }
 
 .navbar-logo img {
-  height: 45px;
+  height: 53px;
   width: auto;
-  margin-top: 8px;
+  margin-top: px;
 }
 
 .navbar-links {
@@ -42,6 +42,7 @@
   list-style: none;
   margin-top: 30px;
   padding: 0;
+  font-size: 18px;
 }
 
 .navbar-links a {
