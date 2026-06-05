@@ -381,9 +381,108 @@
   color: white;
 }
 
+.contact .hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+#bg-img {
+  height: 1000px;
+  width: auto;
+}
+
+.contact-form-wrapper {
+  color: rgb(18, 99, 131);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 6rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: 600;
+  color: rgb(18, 99, 131);
+  font-size: 40px;
+  padding-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 20rem;
+  height: 6rem;
+}
+.form-group label {
+  font-weight: 600;
+  color: rgb(18, 99, 131);
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 26px;
+}
+
+#name {
+  width: 175px;
+  height: 30px;
+  font-family: Inter;
+}
+
+#email {
+  width: 175px;
+  height: 30px;
+  font-family: Inter;
+}
+
+#subject {
+  width: 175px;
+  height: 30px;
+  font-family: Inter;
+}
+
+#message {
+  width: 175px;
+  height: 100px;
+  font-family: Inter;
+}
+
+#submit-btn {
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 0 5px;
+  padding: 18px;
+  border-radius: 0px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
+  background: rgb(18, 99, 131);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 355px;
+  margin-left: 0px;
+}
+
+#submit-btn:hover {
+  background-color: rgb(81, 139, 158);
+  color: white;
+}
+
 .footer {
   grid-area: footer;
   text-align: center;
-  padding: 2rem;
-  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
