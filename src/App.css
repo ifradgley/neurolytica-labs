@@ -1,5 +1,10 @@
 /* HOME PAGE */
 
+.home {
+  max-width: none;
+  width: 100%;
+}
+
 .home-page {
   display: grid;
   grid-template-areas:
@@ -10,7 +15,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: inter;
+  font-family: Inter;
 }
 
 .hero {
@@ -252,13 +257,14 @@
   width: 100%;
   max-width: 1200px;
   margin: 0px auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "hero hero"
+    "content content"
+    "footer footer";
+  font-family: Inter;
   align-items: center;
-}
-
-.about .hero {
-  grid-area: hero;
+  justify-items: center;
 }
 
 .about .hero h1 {
@@ -275,27 +281,37 @@
   font-weight: 400;
 }
 
+.about #hero-img {
+  width: 100%;
+  max-width: 970px;
+  display: block;
+  border-radius: 0px;
+}
+
 .about .content {
   grid-area: content;
   padding-top: 1rem;
   color: rgb(18, 99, 131);
   width: 100%;
-  margin: 0 0 0 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .our-missions {
   display: flex;
-  flex-direction: row;
   gap: 3rem;
   padding: 2rem 0;
   align-items: flex-start;
   width: 100%;
+  max-width: 1200px;
   box-sizing: border-box;
+  justify-content: center;
 }
 
-.missions-column {
+.missions-column,
+.values-column {
   flex: 1;
-  max-width: 360px;
+  max-width: 440px;
 }
 
 .missions-column h2 {
@@ -314,11 +330,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.values-column {
-  flex: 1;
-  max-width: 515px;
-}
-
 .values-column > h3 {
   color: rgb(18, 99, 131);
   font-weight: 700;
@@ -330,7 +341,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .integrity,
@@ -366,7 +377,7 @@
 #collaborate {
   overflow: hidden;
   position: relative;
-  margin: 0 0 0 30px;
+  margin: 0 70px;
   padding: 18px;
   border-radius: 0px;
   color: #fff;
@@ -388,7 +399,6 @@
 /* TECHNOLOGY PAGE */
 
 /* PUBLICATIONS PAGE */
-
 .publications {
   display: grid;
   grid-template-areas:
