@@ -2,12 +2,14 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact-page">
-        <div className="hero">
+        <div className="contact-column left-column">
           <img
             id="bg-img"
-            src="src/assets/images/Neurolytica-Background.png"
+            src="src/assets/images/Neurolytica-Background-2.png"
             alt="Neurolytica logo on blue background"
-          ></img>
+          />
+        </div>
+        <div className="contact-column middle-column">
           <div className="contact-form-wrapper">
             <form>
               <fieldset>
@@ -67,8 +69,13 @@ function Contact() {
             </form>
           </div>
         </div>
-        <div className="content"></div>
-        <div className="footer"></div>
+        <div className="contact-column right-column">
+          <img
+            id="bg-img-2"
+            src="src/assets/images/Neurolytica-Background-2.png"
+            alt="Neurolytica pattern on blue background"
+          />
+        </div>
       </div>
     </div>
   );
