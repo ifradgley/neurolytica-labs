@@ -389,6 +389,54 @@
 
 /* PUBLICATIONS PAGE */
 
+.publications {
+  display: grid;
+  grid-template-areas:
+    "hero hero"
+    "content content"
+    "footer footer";
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: inter;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.hero h1 {
+  color: rgb(18, 99, 131);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.content {
+  grid-area: content;
+}
+
+.publications-contact #collaborate {
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 0 450px;
+  padding: 18px;
+  border-radius: 0px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  background: rgb(18, 99, 131);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 300px;
+}
+
+.publications-contact #collaborate:hover {
+  background-color: rgb(81, 139, 158);
+  color: white;
+}
+
 /* CONTACT PAGE */
 
 .contact-page {
