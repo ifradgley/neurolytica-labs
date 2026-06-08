@@ -1,13 +1,17 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import {
   useReactTable,
   getCoreRowModel,
   flexRender,
+  getFilteredRowModel,
 } from "@tanstack/react-table";
 import publicationsData from "../data/publications-data.js";
 
 function Publications() {
+  const [userInput, setSearchVariable] = useState("");
+
   const columns = [
     { accessorKey: "title", header: "Title" },
     { accessorKey: "author", header: "Author" },
@@ -19,6 +23,11 @@ function Publications() {
     data: publicationsData,
     columns: columns,
     getCoreRowModel: getCoreRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    state: {
+      globalFilter: userInput,
+    },
+    onGlobalFilterChange: setSearchVariable,
   });
 
   return (
@@ -36,6 +45,11 @@ function Publications() {
           <br></br>
         </div>
         <div className="content">
+          <input
+            value={userInput}
+            onChange={(e) => setSearchVariable(e.target.value)}
+            placeholder="Search by title, author or keyword..."
+          />
           <table>
             <thead>
               {table.getHeaderGroups().map((headerGroup) => (
