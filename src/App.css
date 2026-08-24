@@ -412,11 +412,99 @@
   grid-area: content;
   margin: 40px 0 40px 0px;
 }
+.publications .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.publications .search-container {
+  margin: 0;
+}
+
+#publications-search {
+  padding: 10px 45px;
+  width: 20rem;
+  height: 2.5rem;
+  border: 1px solid rgb(18, 99, 131);
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 1rem;
+  color: rgb(18, 99, 131);
+}
+
+#publications-search:focus {
+  outline: none;
+  border-color: rgb(18, 99, 131);
+  box-shadow: 0 0 0 2px rgba(18, 99, 131, 0.2);
+}
+
+.publications .search-icon {
+  width: 30px;
+  height: 30px;
+  left: 10px;
+}
+
+.publications-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publications-table thead {
+  background: rgb(206, 241, 255);
+  height: 50px;
+}
+
+.publications-table th {
+  height: 50px;
+  padding: 0 1rem;
+  text-align: left;
+  color: rgb(18, 99, 131);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.publications-table tbody {
+  background: rgb(216, 232, 238);
+}
+
+.publications-table tr {
+  border-bottom: 1px solid rgba(18, 99, 131, 0.15);
+}
+
+.publications-table tr:hover {
+  background: rgb(206, 241, 255);
+}
+
+.publications-table td {
+  padding: 1rem;
+  vertical-align: top;
+  color: rgb(0, 0, 0);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.publications-table td a {
+  color: rgb(18, 99, 131);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.publications-table td a:hover {
+  text-decoration: underline;
+}
+
+.publications-contact {
+  display: flex;
+  justify-content: center;
+}
 
 .publications-contact #collaborate {
   overflow: hidden;
   position: relative;
-  margin: 0 0 0 450px;
+  margin: 0;
   padding: 18px;
   border-radius: 0px;
   color: #fff;

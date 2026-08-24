@@ -1,12 +1,14 @@
+import searchIcon from "../assets/images/search-teal.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import {
-  useReactTable,
+  useLegacyTable as useReactTable,
   getCoreRowModel,
-  flexRender,
   getFilteredRowModel,
-} from "@tanstack/react-table";
+} from "@tanstack/react-table/legacy";
+import { flexRender } from "@tanstack/react-table/flex-render";
+
 import publicationsData from "../data/publications-data.js";
 
 function Publications() {
@@ -16,7 +18,15 @@ function Publications() {
     { accessorKey: "title", header: "Title" },
     { accessorKey: "author", header: "Author" },
     { accessorKey: "date", header: "Date" },
-    { accessorKey: "link", header: "Link" },
+    {
+      accessorKey: "link",
+      header: "Link",
+      cell: (info) => (
+        <a href={info.getValue()} target="_blank" rel="noopener noreferrer">
+          {info.getValue()}
+        </a>
+      ),
+    },
   ];
 
   const table = useReactTable({
@@ -45,12 +55,16 @@ function Publications() {
           <br></br>
         </div>
         <div className="content">
-          <input
-            value={userInput}
-            onChange={(e) => setSearchVariable(e.target.value)}
-            placeholder="Search by title, author or keyword..."
-          />
-          <table>
+          <div className="search-container">
+            <input
+              value={userInput}
+              onChange={(e) => setSearchVariable(e.target.value)}
+              placeholder="Search by title, author or keyword..."
+              id="publications-search"
+            />
+            <img src={searchIcon} alt="search" className="search-icon" />
+          </div>
+          <table className="publications-table">
             <thead>
               {table.getHeaderGroups().map((headerGroup) => (
                 <tr key={headerGroup.id}>
