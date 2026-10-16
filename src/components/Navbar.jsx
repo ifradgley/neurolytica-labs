@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { searchIndex } from "../data/searchIndex";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/Neurolytica-Title-Logo(V2).png";
 import searchIcon from "../assets/images/search-teal.png";
 
 function Navbar() {
+  const [query, setQuery] = useState("");
+  console.log(searchIndex);
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -29,7 +33,13 @@ function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <li className="search-container">
-          <input id="search-bar" type="text" placeholder="Search..." />
+          <input
+            id="search-bar"
+            type="text"
+            placeholder="Search..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
           <img src={searchIcon} alt="search" className="search-icon" />
         </li>
       </ul>
