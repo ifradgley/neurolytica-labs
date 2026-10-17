@@ -82,6 +82,28 @@
   height: 20px;
 }
 
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  background: #d3d3d3;
+  border: 1px solid rgb(110, 165, 187);
+  z-index: 10;
+}
+
+.search-results a {
+  display: block;
+  padding: 8px 12px;
+}
+
+.search-results a:hover {
+  background: rgb(235, 245, 249);
+}
+
 .home .hero h1 {
   color: rgb(18, 99, 131);
   font-size: 2.5rem;
